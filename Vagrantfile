@@ -43,6 +43,6 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
     # Copy The Bash Aliases
     config.vm.provision "shell" do |s|
-      s.inline = "cp /vagrant/aliases /home/vagrant/.bash_aliases"
+      s.inline = "cp /vagrant/scripts/aliases /home/vagrant/.bash_aliases"
     end
 end
